@@ -68,7 +68,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable robot.service
 
 5. **Start the service immediately**\
-Start the service immediately**
+sudo systemctl start robot.service
 
 6. **(Optional) Check the service status**\
 sudo systemctl status robot.service
