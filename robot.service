@@ -1,0 +1,17 @@
+[Unit]
+Description=Start WASD robot control on boot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/<user_name>/<rest of path if any>/robot_control.py
+WorkingDirectory=/home/pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+
+
